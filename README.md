@@ -1,5 +1,5 @@
 # CertGen
-Used to generate self-signed certificates with OpenSSL and imports them to Dell iDRAC using RACADM or VMWare ESXi using SSH to facilitate encrypted connection.
+Used to generate self-signed certificates with OpenSSL and import them to Dell iDRAC using RACADM or VMWare ESXi using SSH to facilitate encrypted connection.
 This project is written in BASH shell. 
 
 ## Included files
