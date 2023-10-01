@@ -28,8 +28,8 @@ Run: ``sudo apt-get install openssl``
 
   - For ESXi upload,  run ```sh esxiUpload.sh```
     - Inputs: ESXI IPs, domain, hostnames; SSH password
-    - Inputs ***ESXiIPs*** and ***hostnames*** are delineated by spaces, type in-line
+      - Inputs ***ESXiIPs*** and ***hostnames*** are delineated by spaces, type in-line
 
   - For iDRAC upload, run ```sh racadmUpload.sh```
     - Inputs: RACADM IPs, domain, hostnames; RACADM password
-    - Inputs ***RACIPs*** and ***hostnames*** are delineated by spaces, type in-line
+      - Inputs ***RACIPs*** and ***hostnames*** are delineated by spaces, type in-line
