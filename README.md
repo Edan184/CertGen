@@ -1,5 +1,5 @@
 # CertGen
-Used to generate self-signed certificates and imports them to Dell iDRAC using RACADM or VMWare ESXi using SSH to facilitate encrypted connection.
+Used to generate self-signed certificates with OpenSSL and imports them to Dell iDRAC using RACADM or VMWare ESXi using SSH to facilitate encrypted connection.
 This project is written in BASH shell. 
 
 # Included files
@@ -12,16 +12,24 @@ This project is written in BASH shell.
 - racadmUpload.sh - imports public certificate and private key to Dell iDRAC host using RACADM
   - Inputs: RACADM IPs, domain, hostnames; RACADM password
  
-# Use
-Ensure you have a UNIX / LINUX-based environment that supports shell.
+# Installation
 
-- Run certGen.sh
+Ensure you have a UNIX / LINUX-based environment that supports shell and have OpenSSL installed within that environment.
+
+Run: ``sudo apt-get install openssl``
+
+ 
+# Use
+- Run ```sh certGen.sh```
   - Inputs: hostnames, domain; Country, region, city, org, and department for certificate; CSR password
+  - Input **hostnames** are delineated by spaces
 
 - Depending on whether you are attempting to upload to ESXi or iDRAC, run esxiUpload.sh or racadmUpload.sh
 
-  - For esxiUpload.sh
+  - For ESXi upload,  run ```sh esxiUpload.sh```
     - Inputs: ESXI IPs, domain, hostnames; SSH password
-  
-  - For racadmUpload.sh
+    - Inputs ***ESXiIPs*** and ***hostnames*** are delineated by spaces, type in-line
+
+  - For iDRAC upload, run ```sh racadmUpload.sh```
     - Inputs: RACADM IPs, domain, hostnames; RACADM password
+    - Inputs ***RACIPs*** and ***hostnames*** are delineated by spaces, type in-line
