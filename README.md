@@ -24,7 +24,7 @@ Run: ``sudo apt-get install openssl``
   - Inputs: hostnames, domain; Country, region, city, org, and department for certificate; CSR password
   - Input **hostnames** are delineated by spaces
 
-- Depending on whether you are attempting to upload to ESXi or iDRAC, run esxiUpload.sh or racadmUpload.sh
+- Depending on whether you are attempting to upload to ESXi or iDRAC:
 
   - For ESXi upload,  run ```sh esxiUpload.sh```
     - Inputs: ESXI IPs, domain, hostnames; SSH password
